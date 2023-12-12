@@ -1,0 +1,16 @@
+.TLV3602DGKR :1 ;Analog Comparators 2.5-ns, dual-channel high-speed rail-to-rail comparator with push-pull outputs
+SOP65P490X110-8N
+*STM IC
+*NGS
+*PLB 1="IN1+" 2="IN1-" 3="IN2-" 4="IN2+" 5="V-" 6="OUT2" 7="OUT1" 8="V+"
+*MXP 8
+*DFN TLV3602DGKR
+~!Mouser Part Number (595-TLV3602DGKR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV3602DGKR?qs=IPgv5n7u5QZ693tOyGXgLw%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (TLV3602DGKR)
+~!Link Datasheet (https://www.mouser.de/ProductDetail/Texas-Instruments/TLV3602DGKR?qs=IPgv5n7u5QZ693tOyGXgLw%3D%3D)
+~!Height (1.1mm)
+~!3D_Model (TLV3602DGKR)
+TLV3602DGKR
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

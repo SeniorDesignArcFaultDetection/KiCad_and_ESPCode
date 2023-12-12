@@ -1,0 +1,9 @@
+Manufacturer=Texas Instruments
+PartNumber=TLV3602DGKR
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=8
+Version=1.1
+Released=2023-02-14 04:22:03
+Downloaded=2023-12-12 19:28:18
+3D=Y

@@ -1,0 +1,144 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "TLV3602DGKR"
+   (description "Analog Comparators 2.5-ns, dual-channel high-speed rail-to-rail comparator with push-pull outputs")
+   (family "ANA")
+   (package "SOP65P490X110-8N")
+   (attribute "Datasheet Link" "https://www.mouser.de/ProductDetail/Texas-Instruments/TLV3602DGKR?qs=IPgv5n7u5QZ693tOyGXgLw%3D%3D")
+   (attribute "Geometry.Height" "1.1mm")
+   (attribute "Mouser Part Number" "595-TLV3602DGKR")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV3602DGKR?qs=IPgv5n7u5QZ693tOyGXgLw%3D%3D")
+   (attribute "Manufacturer_Name" "Texas Instruments")
+   (attribute "Manufacturer_Part_Number" "TLV3602DGKR")
+   (gate
+    (symbol "TLV3602DGKR")
+    (pin "IN1+" 1 PS)
+    (pin "IN1-" 2 PS)
+    (pin "IN2-" 3 PS)
+    (pin "IN2+" 4 PS)
+    (pin "V+" 8 PS)
+    (pin "OUT1" 7 PS)
+    (pin "OUT2" 6 PS)
+    (pin "V-" 5 PS)
+   )
+  )
+  (symbol "TLV3602DGKR"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOP65P490X110-8N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.15 1.8)
+      (pt 3.15 1.8)
+      (pt 3.15 -1.8)
+      (pt -3.15 -1.8)
+      (pt -3.15 1.8))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.5 1.5)
+      (pt 1.5 1.5)
+      (pt 1.5 -1.5)
+      (pt -1.5 -1.5)
+      (pt -1.5 1.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 0.85)
+      (pt -0.85 1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.15 1.5)
+      (pt 1.15 1.5)
+      (pt 1.15 -1.5)
+      (pt -1.15 -1.5)
+      (pt -1.15 1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.9 1.55)
+      (pt -1.5 1.55))))
+   (leg 1 (pt -2.2 0.975) (padstack 0))
+   (leg 2 (pt -2.2 0.325) (padstack 0))
+   (leg 3 (pt -2.2 -0.325) (padstack 0))
+   (leg 4 (pt -2.2 -0.975) (padstack 0))
+   (leg 5 (pt 2.2 -0.975) (padstack 0))
+   (leg 6 (pt 2.2 -0.325) (padstack 0))
+   (leg 7 (pt 2.2 0.325) (padstack 0))
+   (leg 8 (pt 2.2 0.975) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.45 1.4 0 0 0))
+   )
+   (model "TLV3602DGKR.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

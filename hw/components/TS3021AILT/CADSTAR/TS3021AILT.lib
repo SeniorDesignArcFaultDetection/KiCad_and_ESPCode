@@ -1,0 +1,16 @@
+.TS3021AILT :1 ;Rail-to-rail 1.8 V high-speed comparator, small input offset voltage
+SOT95P280X145-5N
+*STM IC
+*NGS
+*PLB 1="OUT" 2="VCC-" 3="IN+" 4="IN-" 5="VCC+"
+*MXP 5
+*DFN TS3021AILT
+~!Mouser Part Number (511-TS3021AILT)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/TS3021AILT?qs=U58vgkJzipTYTZ89iH%2FIVA%3D%3D)
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (TS3021AILT)
+~!Link Datasheet (https://www.st.com/resource/en/datasheet/ts3021.pdf)
+~!Height (1.45mm)
+~!3D_Model (TS3021AILT)
+TS3021AILT
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 

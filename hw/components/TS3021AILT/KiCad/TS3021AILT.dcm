@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TS3021AILT
+D Rail-to-rail 1.8 V high-speed comparator, small input offset voltage
+K
+F https://www.st.com/resource/en/datasheet/ts3021.pdf
+$ENDCMP
+#
+#End Doc Library

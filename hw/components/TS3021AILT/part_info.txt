@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=TS3021AILT
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=2.1
+Released=2022-09-08 03:31:16
+Downloaded=2023-12-12 19:26:37
+3D=Y
