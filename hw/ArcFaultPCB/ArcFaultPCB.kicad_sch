@@ -1064,7 +1064,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left top))
     (uuid 1769cc82-bc57-4b3c-a630-b5799d9fc6d8)
   )
-  (text_box "Single Comparator\n"
+  (text_box "Single Comparator"
     (at 19.05 106.68 0) (size 34.29 7.62)
     (stroke (width 0) (type default))
     (fill (type none))
@@ -1092,8 +1092,8 @@
     (effects (font (size 2 2) (thickness 0.4) bold) (justify left top))
     (uuid 8b500238-9216-4094-a796-9a2d1a98bd7f)
   )
-  (text_box "WE PROBABLY DONT NEED THE FOLLOWING:"
-    (at 196.85 45.72 0) (size 85.09 7.62)
+  (text_box "WE PROBABLY DONT NEED THE FOLLOWING:\n(from audrey's embedded final project PCB)"
+    (at 196.85 34.29 0) (size 85.09 30.48)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 4 4) (thickness 0.4) bold) (justify left top))
