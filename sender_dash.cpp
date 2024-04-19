@@ -1,9 +1,21 @@
+/*
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com/esp32-esp-now-wi-fi-web-server/
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files.
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+*/
+
 #include <Arduino.h>
 #include <esp_now.h>
 #include <esp_wifi.h>
 #include <WiFi.h>
 #include <EEPROM.h>
 #include "ESPAsyncWebServer.h"
+#include <driver/dac.h>
 
 //MAC Address of the receiver 
 //uint8_t broadcastAddress[] = {0x64, 0xB7, 0x08, 0x29, 0x21, 0x70};
@@ -13,34 +25,36 @@
 
 
 #define LowThreshold 34 //downstream
-#define HighThreshold 5 //upstream
+#define HighThreshold 35 //upstream
 
 //button debouncing
 //variables to keep track of the timing of recent interrupts
-unsigned long button_time = 0;  
-unsigned long last_button_time = 0; 
+//unsigned long button_time = 0;  
+//unsigned long last_button_time = 0; 
 
 int LowThreshDetected = 0;
 int HighThreshDetected = 0;
 
 void IRAM_ATTR ISRLowThresh() {
     
-  button_time = millis();
-  if (button_time - last_button_time > 250)
-  {
+  // button_time = millis();
+  // if (button_time - last_button_time > 250)
+  // {
     LowThreshDetected = 1;
-    last_button_time = button_time;
-  }
-  digitalWrite(BUILTIN_LED, HIGH);
+    //last_button_time = button_time;
+  //}
+  //digitalWrite(BUILTIN_LED, HIGH);
 }
 
 void IRAM_ATTR ISRHighThresh() {
-   button_time = millis();
-  if (button_time - last_button_time > 250)
-  {
+  // button_time = millis();
+  // if (button_time - last_button_time > 250)
+  // {
     HighThreshDetected = 1;
-    last_button_time = button_time;
-  }
+    //last_button_time = button_time;
+  //}
+  digitalWrite(BUILTIN_LED, HIGH);
+  digitalWrite(BUILTIN_LED, LOW);
   
 }
 
@@ -91,7 +105,7 @@ float h = 0;
 
 unsigned long currentMillis = millis();
 unsigned long previousMillis = 0;   // Stores last time temperature was published
-const long interval = 1000;        // Interval at which to publish sensor readings
+const long interval = 700;        // Interval at which to publish sensor readings
 unsigned long start;                // used to measure Pairing time
 unsigned int readingId = 0;   
 
@@ -221,6 +235,12 @@ PairingStatus autoPairing(){
 }  
 
 void setup() {
+  dac_output_enable(DAC_CHANNEL_1); //pin 25
+  dac_output_enable(DAC_CHANNEL_2); //pin 26
+
+  dac_output_voltage(DAC_CHANNEL_1, 139); //ref voltage for high threshhold 1.8
+  dac_output_voltage(DAC_CHANNEL_2, 108); //refr voltage for low threshhold 1.4
+  
   Serial.begin(115200);
   Serial.println();
   pinMode(LED_BUILTIN, OUTPUT);

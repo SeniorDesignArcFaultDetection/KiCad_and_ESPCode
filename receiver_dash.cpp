@@ -1,3 +1,13 @@
+/*
+  Rui Santos
+  Complete project details at https://RandomNerdTutorials.com/esp32-esp-now-wi-fi-web-server/
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files.
+  
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+*/
 
 #include <esp_now.h>
 #include <WiFi.h>
@@ -201,7 +211,7 @@ void setup() {
   // Set the device as a Station and Soft Access Point simultaneously
   WiFi.mode(WIFI_AP_STA);
   // Set device as a Wi-Fi Station
-  WiFi.begin("Bangla Network", "fearlessjungle420");
+  WiFi.begin("TazzyPhone", "creambeandream");
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
     Serial.println("Setting as a Wi-Fi Station..");
